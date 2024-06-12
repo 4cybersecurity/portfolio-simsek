@@ -27,18 +27,15 @@ export const FloatingNav = ({
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
-    if (typeof current === "number") {
-      let direction = current! - scrollYProgress.getPrevious()!;
-
-      if (scrollYProgress.get() < 0.05) {
-        // also set true for the initial state
+    let direction = current! - scrollYProgress.getPrevious()!;
+    if (scrollYProgress.get() < 0.05) {
+      // also set true for the initial state
+      setVisible(true);
+    } else {
+      if (direction < 0) {
         setVisible(true);
       } else {
-        if (direction < 0) {
-          setVisible(true);
-        } else {
-          setVisible(false);
-        }
+        setVisible(false);
       }
     }
   });
@@ -66,7 +63,7 @@ export const FloatingNav = ({
         )}
         style={{
           backdropFilter: "blur(16px) saturate(180%)",
-          backgroundColor: "rgba(17, 25, 40, 0.75)",
+          backgroundColor: "rgba(255,255,255,0.75)",
           borderRadius: "12px",
           border: "1px solid rgba(255, 255, 255, 0.125)",
         }}
