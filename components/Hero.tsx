@@ -50,9 +50,9 @@ const Hero = () => {
                         I know that i have a very long way to go. My motivation is my desire for programming.
                     </p>
 
-                    <a href="#projects">
+                    <a href="#about">
                         <MagicButton
-                            title="My Projects"
+                            title="About Me"
                             icon={<FaLocationArrow/>}
                             position="right"
                         />

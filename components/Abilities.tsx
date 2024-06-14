@@ -11,8 +11,8 @@ const Abilities = () => {
             </h1>
             <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
                 <Card
-                    title="Planning & Strategy"
-                    icon={<AceternityIcon order="Phase 1"/>}
+                    title=""
+                    icon={<AceternityIcon order="Planning & Strategy"/>}
                     des="Architected and implemented comprehensive development strategies
                     to enhance web application performance and user experience."
                 >
@@ -22,8 +22,8 @@ const Abilities = () => {
                     />
                 </Card>
                 <Card
-                    title="Individual Working"
-                    icon={<AceternityIcon order="Phase 2"/>}
+                    title=""
+                    icon={<AceternityIcon order="Individual Working"/>}
                     des="Independently designed, developed, and deployed full-stack web applications,
                     demonstrating strong problem-solving skills and technical proficiency."
                 >
@@ -38,8 +38,8 @@ const Abilities = () => {
                     />
                 </Card>
                 <Card
-                    title="Development & Creativity"
-                    icon={<AceternityIcon order="Phase 3"/>}
+                    title=""
+                    icon={<AceternityIcon order="Development & Creativity"/>}
                     des="Employed a mix of modern technologies and creative thinking to build dynamic,
                     responsive, and visually appealing interfaces."
                 >
