@@ -92,7 +92,7 @@ export const projects = [
     des: "A mobile application for athletes made with flutter and dart languages",
     img: "/calories.png",
     iconLists: ["/flutter.png", "/dart.svg"],
-    link: "https://ahmetsimsek.be/portfolio/index.html",
+    link: "https://www.calories.info/calorie-counter",
   },
   {
     id: 4,
