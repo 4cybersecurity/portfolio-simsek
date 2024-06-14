@@ -1,5 +1,5 @@
 import React from "react";
-import {SkillBar} from "@/components/ui/SkillBar";
+import {CircularSkill} from "@/components/ui/CircularSkill";
 
 type Skill = {
     name: string;
@@ -18,12 +18,17 @@ const ProgrammingSkills = () => {
 
     return (
         <section className="w-full py-20">
-            <h1 className="heading">
+            <h1 className="heading text-4xl font-bold text-center mb-10">
                 My <span className="text-purple">Programming Skills</span>
             </h1>
-            <div className="my-10 flex flex-col items-center justify-center w-full gap-6">
-                {skills.map((skill, index) => (
-                    <SkillBar key={index} skill={skill} />
+            <div className="flex flex-wrap justify-center gap-10">
+                {skills.slice(0, 3).map((skill, index) => (
+                    <CircularSkill key={index} skill={skill}/>
+                ))}
+            </div>
+            <div className="flex flex-wrap justify-center gap-10 mt-10">
+                {skills.slice(3).map((skill, index) => (
+                    <CircularSkill key={index} skill={skill}/>
                 ))}
             </div>
         </section>
