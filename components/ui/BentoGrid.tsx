@@ -7,7 +7,6 @@ import {cn} from "@/lib/utils";
 
 
 import {BackgroundGradientAnimation} from "./GradientBg";
-import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
 
@@ -49,8 +48,8 @@ export const BentoGridItem = ({
     titleClassName?: string;
     spareImg?: string;
 }) => {
-    const leftLists = ["ReactJS", "Express", "Typescript"];
-    const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+        const leftLists = ["", "Java", "Javascript"];
+    const rightLists = ["Next.js", "Flutter", "Dart"];
 
     const [copied, setCopied] = useState(false);
 
@@ -130,8 +129,6 @@ export const BentoGridItem = ({
                     >
                         {title}
                     </div>
-
-                    {id === 2 && <GridGlobe/>}
 
                     {id === 3 && (
                         <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
