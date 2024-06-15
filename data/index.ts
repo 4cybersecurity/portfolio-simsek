@@ -80,7 +80,7 @@ export const projects = [
     des: "Explore the artworks of the art academy students of Mechelen and bid on the auctions.",
     img: "/kunstacademie.png",
     iconLists: ["/spring.png", "/javascript.jpeg", "/css.png", "/html.webp", "/bootstrap.png"],
-    link: "/https://kunstacademie-mechelen-nxzxinxcka-ew.a.run.app/",
+    link: "https://kunstacademie-mechelen-nxzxinxcka-ew.a.run.app/",
   },
   {
     id: 2,
