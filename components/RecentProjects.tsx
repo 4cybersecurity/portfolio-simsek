@@ -4,10 +4,11 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
+import React from "react";
 
 const RecentProjects = () => {
     return (
-        <div className="py-20">
+        <div className="py-20" id="projects">
             <h1 className="heading">
                 A small selection of{" "}
                 <span className="text-purple">recent projects</span>
@@ -27,8 +28,10 @@ const RecentProjects = () => {
                                     className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                                     style={{ backgroundColor: "#13162D" }}
                                 >
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
                                     <img src="/bg.png" alt="bgimg" />
                                 </div>
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img
                                     src={item.img}
                                     alt="cover"
@@ -60,6 +63,7 @@ const RecentProjects = () => {
                                                 transform: `translateX(-${5 * index + 2}px)`,
                                             }}
                                         >
+                                            {/* eslint-disable-next-line @next/next/no-img-element */}
                                             <img src={icon} alt="icon5" className="p-2" />
                                         </div>
                                     ))}

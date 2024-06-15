@@ -13,7 +13,7 @@ const SpeakingSkills: React.FC = () => {
     const levelOrder = ["A1", "A2", "B1", "B2", "C1", "C2"];
 
     return (
-        <section className="w-full py-20">
+        <section className="w-full py-20" id="speakingskills">
             <h1 className="heading text-4xl font-bold text-center mb-10">
                 My <span className="text-purple">Speaking Skills</span>
             </h1>

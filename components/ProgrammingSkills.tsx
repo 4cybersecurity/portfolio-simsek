@@ -17,7 +17,7 @@ const ProgrammingSkills = () => {
 
 
     return (
-        <section className="w-full py-20">
+        <section className="w-full py-20" id="programmingskills">
             <h1 className="heading text-4xl font-bold text-center mb-10">
                 My <span className="text-purple">Programming Skills</span>
             </h1>
